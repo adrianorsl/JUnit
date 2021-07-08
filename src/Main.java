@@ -1,4 +1,5 @@
 import Class.ScriptDB;
+import Enum.Tipos;
 
 public class Main {
 
@@ -7,7 +8,7 @@ public class Main {
 				// autoIngrement e notNull 1 true 0 false;
 				ScriptDB scpt = new ScriptDB();
 				scpt.setNome("codigo");
-				scpt.setTipo("INT");
+				scpt.setTipo(Tipos.INT);
 				
 				
 				
