@@ -1,9 +1,11 @@
 package Class;
 
+import Enum.Tipos;
+
 public class ScriptDB {
 
 	private String nome;
-	private String tipo;
+	private Tipos tipo;
 	private int autoIngrement;
 	private int notNull;
 
@@ -19,13 +21,14 @@ public class ScriptDB {
 	}
 
 
-	public String getTipo() {
+	public Tipos getTipo() {
 		return tipo;
 	}
 
 
-	public void setTipo(String tipo) {
-		this.tipo = tipo;
+	public void setTipo(Tipos i) {
+		
+			this.tipo = i;
 	}
 
 
@@ -51,7 +54,7 @@ public class ScriptDB {
 	}
 
 	// autoIngrement e notNull 1 true 0 false;
-	public String CriarScript(String nome, String tipo, int autoIngrement, int notNull) {
+	public String CriarScript(String nome, Tipos tipo, int autoIngrement, int notNull) {
 		String script = "'" + nome + "'" + " " + tipo;
 		if (notNull == 1) {
 			 script = script + " NOT NULL";
@@ -63,7 +66,7 @@ public class ScriptDB {
 		}else {
 			
 		}
-		return script;			
+		return script + ",";			
 	}
 
 
