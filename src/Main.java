@@ -7,12 +7,10 @@ public class Main {
 				
 				// autoIngrement e notNull 1 true 0 false;
 				ScriptDB scpt = new ScriptDB();
-				scpt.setNome("codigo");
-				scpt.setTipo(Tipos.INT);
 				
 				
+				System.out.println(scpt.CriarScript("codigo", Tipos.INT, 1, 1));
 				
-				System.out.println(scpt.CriarScript(scpt.getNome(), scpt.getTipo(), 1, 1));
 	}
 
 }
