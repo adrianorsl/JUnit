@@ -10,6 +10,10 @@ public class ScriptDB {
 	private int notNull;
 
 
+	
+	
+
+	
 
 	public String getNome() {
 		return nome;
